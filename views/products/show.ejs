@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/show.css">
+
+
+
+    <title>about the product</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>About the Product</h1>
+        <p>Product ID: <%= product.id %>
+        </p>
+        <p>Product Name: <%= product.name %>
+        </p>
+        <p><strong>Product Price: <%= product.price %></strong></p>
+        <p>Product Description: <%= product.description %>
+        </p>
+        <hr />
+
+        <!-- Navigation links styled as buttons -->
+        <div class="nav-links">
+            <a href="/products" class="button-link">Back to All Products</a>
+            <a href="/products/<%= product.id %>/edit" class="button-link">Edit Product</a>
+        </div>
+
+        <!-- Delete button -->
+        <form action="/products/<%= product.id %>?_method=Delete" method="POST">
+            <button type="submit">Delete</button>
+        </form>
+    </div>
+
+</body>
+
+
+</html>

@@ -1,0 +1,154 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* General body styling */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    resize: none;
+}
+
+textarea {
+    height: 80px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Link styling */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Product List */
+.product-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-item:last-child {
+    border-bottom: none;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.product-actions a,
+.product-actions button {
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.product-actions .edit-btn {
+    background-color: #007BFF;
+}
+
+.product-actions .delete-btn {
+    background-color: #DC3545;
+}
+
+
+/* Add spacing between items */
+.product-item {
+    margin-bottom: 15px;
+}
+
+/* Style for links to make "Add New Product" stand out */
+a[href="/products/new"] {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+a[href="/products/new"]:hover {
+    background-color: #218838;
+}
